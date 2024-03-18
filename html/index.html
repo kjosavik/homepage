@@ -133,19 +133,35 @@
 
     .column-list {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
+
 
     .column {
       padding: 0 1em;
     }
 
     .column:first-child {
+      width: 50%;
       padding-left: 0;
     }
 
     .column:last-child {
       padding-right: 0;
+    }
+
+    @media (max-width: 600px) {
+      .column-list {
+        display: block; 
+      }
+
+      .column {
+        width: 100%;
+      }
+
+      .column:first-child {
+        width: 100%;
+      }
     }
 
     .table_of_contents-item {
@@ -831,7 +847,7 @@
     </header>
     <div class="page-body">
       <div class="column-list">
-        <div style="width:52.941176470588246%" class="column">
+        <div class="column">
           <figure class="block-color-gray_background callout" style="display:flex"
             >
             <div style="font-size:1.5em"><span class="icon">👋</span></div>
@@ -841,7 +857,7 @@
           <p>
           </p>
         </div>
-        <div style="width:47.05882352941177%" class="column">
+        <div class="column">
           <h3><strong>Contact</strong></h3>
           <p><a href="mailto:adalovelace@mail.com">📧
               erik.kjosavik@gmail.com</a></p>
