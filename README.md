@@ -4,7 +4,6 @@ Personal homepage and CV. A static site built with HTML, CSS, and vanilla JavaSc
 
 - [Homepage copy](docs/homepage-content-draft.md)
 - [Layout and design workflow](docs/design-brief.md)
-- [Logo sources and usage status](docs/asset-sources.md)
 - [site/](site/): public site files and Cloudflare Pages output directory.
 - The previous homepage is preserved at the `legacy-v1` Git tag, not in the current working tree.
 
